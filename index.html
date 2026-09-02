@@ -316,7 +316,9 @@
     flex-wrap:wrap;
     gap:18px;
     margin-bottom:44px;
+    max-width:100%;
   }
+  .section-head > *{min-width:0;}
   .section-head h2{
     font-size:clamp(32px,5vw,52px);
     color:var(--bone);
@@ -330,7 +332,12 @@
     border:1px dashed var(--ember-dark);
     background:var(--ember-tint);
     padding:6px 12px;
-    white-space:nowrap;
+    white-space:normal;
+    max-width:100%;
+    flex-shrink:1;
+  }
+  @media (max-width:480px){
+    .tag-ejemplo{font-size:10px; line-height:1.5;}
   }
 
   /* ---------- BIO ---------- */
